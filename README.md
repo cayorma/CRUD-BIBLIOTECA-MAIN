@@ -74,13 +74,16 @@ CREATE TABLE loans (
     ON DELETE RESTRICT
     ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 4. Backend – Express.js
+
 4.1 Configuração
 Pacotes principais: express, mysql2, cors, body-parser
 Arquivo de configuração do banco: db.js
 Validações básicas:
 Autor deve ter name
 Livro deve ter title e author_id
+
 4.2 Rotas
 Entidade	Método	Endpoint	Descrição
 Authors	GET	/authors	Listar todos os autores
@@ -93,7 +96,9 @@ Books	GET	/books/:id	Listar livro por ID
 Books	POST	/books	Criar novo livro
 Books	PUT	/books/:id	Atualizar livro
 Books	DELETE	/books/:id	Deletar livro
+
 5. Frontend – React.js
+
 5.1 Estrutura de Rotas
 /authors → Lista de autores
 /authors/new → Formulário de cadastro
@@ -101,12 +106,15 @@ Books	DELETE	/books/:id	Deletar livro
 /books → Lista de livros
 /books/new → Formulário de cadastro
 /books/:id/edit → Formulário de edição
+
 5.2 Requisitos
 Usar React Router
 Consumir API via fetch ou axios
 Feedback visual ao criar, editar ou excluir
 Select de autores no formulário de livros
+
 6. Como Rodar o Projeto
+
 6.1 Backend
 Abra o terminal e navegue até a pasta do backend: cd backend
 Instale as dependências: npm install
