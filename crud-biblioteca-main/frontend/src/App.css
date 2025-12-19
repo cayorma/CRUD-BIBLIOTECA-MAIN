@@ -1,0 +1,203 @@
+/* =========================
+   RESET E BASE
+========================= */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background: linear-gradient(
+    rgba(30, 41, 59, 0.85),
+    rgba(30, 41, 59, 0.85)
+  ),
+  url('/biblioteca.jpg.jpg') center / cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* =========================
+   CONTAINER PRINCIPAL
+========================= */
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 50px 20px;
+  background-color: #f8fafc;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* =========================
+   TÍTULOS
+========================= */
+h1 {
+  font-size: 34px;
+  font-weight: 800;
+  text-align: center;
+  color: #0f172a;
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 40px 0 20px;
+  text-align: center;
+  position: relative;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #3b82f6;
+  margin: 10px auto 0;
+  border-radius: 4px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2563eb;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* =========================
+   FORMULÁRIOS
+========================= */
+form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #cbd5f5;
+  background-color: #ffffff;
+  font-size: 14px;
+  transition: all 0.25s ease;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+  outline: none;
+}
+
+/* =========================
+   BOTÕES
+========================= */
+form button {
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* Botão principal */
+button[type="submit"] {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: #ffffff;
+  border: none;
+}
+
+button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.35);
+}
+
+/* Botão secundário */
+button[type="button"] {
+  background: linear-gradient(135deg, #ef4444, #b91c1c);
+  color: #ffffff;
+  border: none;
+}
+
+button[type="button"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(185, 28, 28, 0.35);
+}
+
+/* =========================
+   TABELAS
+========================= */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 25px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+table thead {
+  background-color: #1e40af;
+}
+
+table th {
+  padding: 14px;
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+table td {
+  padding: 14px;
+  text-align: center;
+  color: #334155;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+table tr:last-child td {
+  border-bottom: none;
+}
+
+table tbody tr:hover {
+  background-color: #eff6ff;
+  transition: background 0.3s;
+}
+
+/* =========================
+   BOTÕES DE AÇÃO NA TABELA
+========================= */
+.action-buttons button {
+  margin: 0 6px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+/* =========================
+   TOASTS (react-toastify)
+========================= */
+.Toastify__toast--success {
+  background: linear-gradient(135deg, #22c55e, #16a34a) !important;
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+.Toastify__toast--error {
+  background: linear-gradient(135deg, #ef4444, #b91c1c) !important;
+  color: #ffffff !important;
+  font-weight: 600;
+}

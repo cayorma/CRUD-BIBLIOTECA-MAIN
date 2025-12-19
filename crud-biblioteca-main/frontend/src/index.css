@@ -1,0 +1,27 @@
+/* Configurações básicas  */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Navegador  usa o modo claro como base */
+  color-scheme: light;
+  
+  /* Define uma cor padrão escura para o texto para não sumir no fundo branco */
+  color: #213547;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: flex-start; 
+  justify-content: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
